@@ -15,7 +15,7 @@ public Jaxb2Marshaller marshaller(){
 @Bean
 public SoapClient soapConnector(Jaxb2Marshaller marshaller){
     SoapClient client = new SoapClient();
-    client.setDefaultUri("http://localhost:8080/ws");
+    client.setDefaultUri("http://35.222.29.239:8080/ws");
     client.setMarshaller(marshaller);
     client.setUnmarshaller(marshaller);
     return client;

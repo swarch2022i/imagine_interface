@@ -14,7 +14,7 @@ public class SoapClientController {
     private SoapClient soapClient;
 @GetMapping
 public Country sum(@RequestParam String countr) {
-GetCountryResponse response = soapClient.getCountry("http://localhost:8080/ws/countries",countr);
+GetCountryResponse response = soapClient.getCountry("http://35.222.29.239:8080/ws/countries",countr);
 return response.getCountry();
 }
 }
