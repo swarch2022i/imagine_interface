@@ -1,5 +1,6 @@
 package com.imagine.imagine_interface;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -9,6 +10,7 @@ import com.imagine.imagine_interface.ClientSOAP.*;
 import com.example.consumingwebservice.wsdl.*;
 @RestController
 @RequestMapping("/")
+@CrossOrigin(origins = "*")
 public class SoapClientController {
     @Autowired
     private SoapClient soapClient;
